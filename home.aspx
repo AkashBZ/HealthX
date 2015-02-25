@@ -56,21 +56,23 @@
 
         </div>
         <div id="main_section">
-            <table>
-                <tr>
-                    <td>Email:</td>
-                    <td> <asp:TextBox ID="email" runat="server"></asp:TextBox></td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td><asp:TextBox ID="password" runat="server"></asp:TextBox></td>
-                </tr>
-           <tr>
-               <td colspan="2"> <asp:Button ID="submit_botton" runat="server" Text="Log In" OnClick="submit_botton_Click" Width="200" /></td>
-           </tr>
-            
-           
-                </table> 
+            <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+        <asp:TextBox ID="email" runat="server" CssClass="form-control" Width="25%"></asp:TextBox>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+        <asp:TextBox ID="password" runat="server" CssClass="form-control" TextMode="Password" Width="25%"></asp:TextBox>
+    </div>
+  </div>
+            <div class="form-group">
+                <div class="col-sm-10">
+                <asp:Button ID="submit_button" runat="server" Text="LogIn For Monitoring Your Health" CssClass="btn btn-success" />
+                    </div>
+            </div>
     </div>
         </div>
     </form>
