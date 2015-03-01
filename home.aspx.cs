@@ -11,13 +11,13 @@ public partial class home : System.Web.UI.Page
     {
 
     }
-    protected void submit_button_Click(object sender, EventArgs e)
+
+
+    protected void Button1_Click(object sender, EventArgs e)
     {
-        if (email.Text == "nikhilmaurya10@gmail.com" && password.Text == "nikhil007")
-        {
-            Response.Redirect("patient_analyser.aspx");
-        }
-        else
-        { Response.Write("<script language=javascript>alert('Email password combination is incorrect!');</script>"); }
+        string s = Page.Request.Form["textbox"].ToString();
+        string pass = Page.Request.Form["inputPassword"].ToString();
+        if (s == "nikhilmaurya10@gmail.com" && pass == "nikhil007")
+        { Response.Redirect("patient_analyser.aspx"); }
     }
 }
