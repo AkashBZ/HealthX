@@ -18,6 +18,6 @@ public partial class home : System.Web.UI.Page
         string s = Page.Request.Form["textbox"].ToString();
         string pass = Page.Request.Form["inputPassword"].ToString();
         if (s == "nikhilmaurya10@gmail.com" && pass == "nikhil007")
-        { Response.Redirect("patient_analyser.aspx"); }
+        { Response.Redirect("patient_analyser.aspx?pid=a1388/qB"); }
     }
 }

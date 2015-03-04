@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" Debug="true" %>
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
@@ -13,15 +13,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <script src="js/JavaScript.js"></script>
+    <link rel="shotrcut icon" type="image/x-icon" href="images/im1.jpg" />
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    
     <script src="js/bootstrap.min.js"></script>
     <div id="outermost_container" class="container-fluid" style="width:100%; padding:0px">
-        <nav class="navbar navbar-inverse col-lg-12" role="navigation" style="width:100%;  padding-right:10px">
-             <div class="navbar-header">
-                  <a class="navbar-brand" href="#">HealthX-Your Health Monitoring System</a> 
+        <nav class="navbar navbar-inverse col-lg-12 navbar-fixed-top" role="navigation" style="width:100%;  padding-right:10px">
+             <div class="navbar-header" style="height:100%">
+                   <a class="navbar-brand" href="home.aspx">
+                    <img src="images/logo1.jpg" alt="" style="height:100%" />
+                </a> 
 
              </div> 
              <div>
