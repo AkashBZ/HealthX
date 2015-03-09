@@ -29,9 +29,32 @@ width:35%;
     margin-top:-17.5%;
 }
 
-.navbar .brand {
-    max-height: 80px;
-    overflow: visible;
+#selection {
+padding-top:50px;
+
+}
+
+
+ 
+.navbar-brand,
+.navbar-nav {
+    /*line-height: 100px;*/
+    height: 100px;
     padding-top: 0;
-    padding-bottom: 0;
+}
+
+li a:hover {
+    border-top: 3px solid orange;
+}
+
+#footer {
+    height: 100px;
+    background-color:#BCBCE6;
+    margin-top:130%;
+    
+}
+#Button2 {
+    height: 60px;
+    margin:0px;
+    padding:0px;
 }

@@ -21,35 +21,71 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    
     <script src="js/bootstrap.min.js"></script>
-     <nav class="navbar navbar-inverse col-lg-12" role="navigation" style="width:100%;  padding-right:10px">
+    
+     <nav class="navbar navbar-inverse col-sm-12 navbar-fixed-top" role="navigation" style="width:100%;  padding-right:10px">
              <div class="navbar-header" style="height:100%">
                    <a class="navbar-brand" href="home.aspx">
-                    <img src="images/logo1.jpg" alt="" style="height:100%" />
+                    <img src="images/IMG-20150309-WA0003.jpg" alt="" style="height:80px; width:auto; margin:0px" />
                 </a> 
 
              </div> 
              <div>
                   <ul class="nav navbar-nav navbar-right">
-                       <li class="active"><a href="home.aspx">Home</a></li>
-                       <li><a href="#">About Us</a></li> 
-                      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Doctor<b class="caret"></b> </a> 
+                       <li><a href="home.aspx" style="margin-top:50px;">Home</a></li>
+                       <li><a href="#" style="margin-top:50px;">About Us</a></li> 
+                      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:50px;">Your Doctor<b class="caret"></b> </a> 
                           <ul class="dropdown-menu"> <li><a href="#"> Request Medication</a></li> <li><a href="#">Make Appointment</a></li> <li><a href="#">Send E-Mail</a></li> <li class="divider"></li> <li><a href="#">Send Urgent Message</a></li> <li class="divider"></li> </ul> </li>
-                       <li><a href="#">Print Observations</a></li>
-                      <li><a href="#">User LogOut</a></li>
+                       <li><a href="#" style="margin-top:50px;">Print Observations</a></li>
+                      <li><a href="#" style="margin-top:50px;">User LogOut</a></li>
 
-                       <li><a href="#">Contact Us</a></li>  
+                       <li><a href="#" style="margin-top:50px;">Contact Us</a></li>  
                   </ul> 
 
              </div>
 
         </nav>
+    
     <form id="form1" runat="server">
-    <div style="margin:0px 10px 0px 10px" >
-        <div id="graph_container" style="width:70%; height:100%; float:left; border-right:1px solid #E6E6E6">
+        
+    <div style="margin:120px 10px 0px 10px" >
+        <div id="graph_container" style="width:70%; height:100%; float:left; border-right:1px solid #E6E6E6; padding-left:20px">
         <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Patient ID: HHX-a1388/qB</h5></label>
          <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Patient Name: Nikhil Maurya</h5></label>
          <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Attending Doctor: Dr. Anil Mitra</h5></label>
         <div id="chartarea" style="width:80%; height:80%; float:left; border-right: 1px solid #E6E6E6; margin:3% 0% 0% 7%"></div>
+         <div id="selection" class="container-fluid">
+             <div class="row">
+                 <div class="col-sm-4" style="border-right:1px solid #D1D1FF">
+                     <div class="dropdown"> 
+                         <button type="button" class="btn dropdown-toggle btn-success" id="dropdownMenu1" data-toggle="dropdown" style="width:100%">Showing: Heart Rate &nbsp;&nbsp;&nbsp; <span class="caret"></span> </button>
+                          <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1"  style="width:100%">
+                               <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Show Heart Rate</a> </li>
+                               <li role="presentation" class="divider"></li>
+                              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">Show Body Temperature</a> </li> 
+                                
+                          </ul> 
+                     </div>
+                     <br />
+                     
+                      <div class="dropdown"> 
+                         <button type="button" class="btn dropdown-toggle btn-success" id="Button1" data-toggle="dropdown" style="width:100%">Observation Period: 1 Day &nbsp;&nbsp; <span class="caret"></span> </button>
+                          <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1"  style="width:100%">
+                               <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"> 1 Week </a> </li>
+                               <li role="presentation" class="divider"></li>
+                              <li role="presentation"> <a role="menuitem" tabindex="-1" href="#"> 1 Month </a> </li> 
+                                
+                          </ul> 
+                     </div>
+                 </div>
+                 <div class="col-sm-8">
+                     <div class="form-group">
+                          <label class="label-success" style="width:100%; text-align:center; color:white;">Inform Your Doctor: Add a Message</label> <textarea class="form-control col-sm-9" rows="3" placeholder="Add your message here! Then click Inform."></textarea>
+                     </div>
+                     <asp:Button ID="Button2" runat="server" Text="Inform" CssClass="btn btn-success col-sm-3" />
+                 </div>
+             </div>
+         </div>  
+           
         </div>
         <div id="details" style="float:left; border-left:1px solid gray; height:70%; width:25%; margin-left:3%;">
             <label style=" background-color:#66AF66" class="col-sm-12"><h5 style="color:white">Other Details</h5></label>
@@ -89,7 +125,25 @@
              });
     </script>
     </div>
+            <%-- <div id="footer">
+      <h4 style="text-align:center;"><p>All Rights Reserved</p></h4>
+      <div class="row">
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+          <div class="col-sm-4">
+
+          </div>
+      </div>
+  </div>--%>
+          
     </form>
+ 
+        
+
    
 </body>
 </html>
