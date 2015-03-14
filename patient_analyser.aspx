@@ -88,19 +88,19 @@
          </div>  
            
         </div>
-        <div id="details" style="float:left; border-left:1px solid gray; height:70%; width:25%; margin-left:3%;">
+        <div id="details" style="float:left; border:1px solid lightgray; height:70%; width:25%; margin-left:3%; background-color:#66AF66"">
             <label style=" background-color:#66AF66" class="col-sm-12"><h5 style="color:white">Other Details</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Monitoring Start Date: 20/02/2015</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Monitor Mode: Self</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Major Diagnosis: Highly Elevated Heart Rate</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Major Conclusion: Suffered from a MINOR HEART ATTACK on 18/02/2015</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Average Heart Rate: 87</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Average Pulse Rate: 87</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Under Medication: Yes</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Medication Mode: Advised</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Current Condition: Stable Heart rate, stable BP and pulse</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Present Medication: Patient has been adviced a bi-day dose of Metha-ceptamine and Dulcolex-400. Take Helectosil under severe conditions.</h5></label>
-            <label style=" background-color:#EBF5FF" class="col-sm-12"><h5>Other Advices: Drink Water 5-8 litres</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Monitoring Start Date: 20/02/2015</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Monitor Mode: Self</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Major Diagnosis: Highly Elevated Heart Rate</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Major Conclusion: Suffered from a MINOR HEART ATTACK on 18/02/2015</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Average Heart Rate: 87</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Average Pulse Rate: 87</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Under Medication: Yes</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Medication Mode: Advised</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Current Condition: Stable Heart rate, stable BP and pulse</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Present Medication: Patient has been adviced a bi-day dose of Metha-ceptamine and Dulcolex-400. Take Helectosil under severe conditions.</h5></label>
+            <label style=" background-color:#fffcfc" class="col-sm-12"><h5>Other Advices: Drink Water 5-8 litres</h5></label>
 
         </div>
          <script type="text/javascript">
@@ -134,8 +134,8 @@
     </script>
        
     </div>
-           <div class="container col-sm-12 col-xs-12 col-md-12" style="margin-top:50px; text-align:center; height:70px; border-top:1px solid black">
-               <div class="row">
+           <div class="container col-sm-12 col-xs-12 col-md-12" style="margin-top:50px; text-align:center; height:70px; border-top:1px solid lightgray">
+               <div class="row" style="background-color:#f1efef">
                    <div class="col-sm-3" id="copyrights">
                        <h5 style="display:inline">&copy; HealthHex Co-orp 2015</h5>
                    </div>
