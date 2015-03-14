@@ -14,7 +14,7 @@ public partial class home : System.Web.UI.Page
 
 
     protected void Button1_Click(object sender, EventArgs e)
-    {
+    {//currently this is a dummy site. Hence only one user is being checked
         string s = Page.Request.Form["textbox"].ToString();
         string pass = Page.Request.Form["inputPassword"].ToString();
         if (s == "nikhilmaurya10@gmail.com" && pass == "nikhil007")

@@ -22,6 +22,7 @@
    
     <script src="js/bootstrap.min.js"></script>
     
+    
      <nav class="navbar navbar-inverse col-sm-12 navbar-fixed-top" role="navigation" style="width:100%;  padding-right:10px">
              <div class="navbar-header" style="height:100%">
                    <a class="navbar-brand" href="home.aspx">
@@ -103,43 +104,113 @@
 
         </div>
          <script type="text/javascript">
-             new Morris.Line({
-                 // ID of the element in which to draw the chart.
-                 element: 'chartarea',
-                 // Chart data records -- each entry in this array corresponds to a point on
-                 // the chart.
-                 data: [
-                   { year: '2008', value: 3 },
-                   { year: '2009', value: 10 },
-                   { year: '2010', value: 5 },
-                   { year: '2011', value: 15 },
-                   { year: '2012', value: 20 }
-                 ],
-                 // The name of the data record attribute that contains x-values.
-                 xkey: 'year',
-                 // A list of names of data record attributes that contain y-values.
-                 ykeys: ['value'],
-                 // Labels for the ykeys -- will be displayed when you hover over the
-                 // chart.
-                 labels: ['Value']
+             
+            
+             var obj;
+             $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=kanpur", function (data) {
+                 new Morris.Line({
+                     // ID of the element in which to draw the chart.
+                     element: 'chartarea',
+                     // Chart data records -- each entry in this array corresponds to a point on
+                     // the chart.
+                     data: [
+                       { year: '2008', value: data.coord.lon },
+                       { year: '2009', value: data.coord.lat },
+                       { year: '2010', value: data.coord.lon },
+                       { year: '2011', value: data.coord.lon },
+                       { year: '2012', value: data.coord.lat }
+                     ],
+                     // The name of the data record attribute that contains x-values.
+                     xkey: 'year',
+                     // A list of names of data record attributes that contain y-values.
+                     ykeys: ['value'],
+                     // Labels for the ykeys -- will be displayed when you hover over the
+                     // chart.
+                     labels: ['Value']
+                 });
              });
+             var final = JSON.parse(data);
+             
     </script>
+       
     </div>
-            <%-- <div id="footer">
-      <h4 style="text-align:center;"><p>All Rights Reserved</p></h4>
-      <div class="row">
-          <div class="col-sm-4">
-
-          </div>
-          <div class="col-sm-4">
-
-          </div>
-          <div class="col-sm-4">
-
-          </div>
-      </div>
-  </div>--%>
-          
+           <div class="container col-sm-12 col-xs-12 col-md-12" style="margin-top:50px; text-align:center; height:70px; border-top:1px solid black">
+               <div class="row">
+                   <div class="col-sm-3" id="copyrights">
+                       <h5 style="display:inline">&copy; HealthHex Co-orp 2015</h5>
+                   </div>
+                   <div class="col-sm-9" id="quote">
+                       <h4>Get Good Health. Share. Give Good Health.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="Buy HealthHex"  CssClass="btn btn-success"/></h4>
+                       
+                   </div>
+               </div>
+             </div>
+        <div class="container col-sm-12" style="height:220px;background-color:#232222; text-align:center; padding-top:20px;">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-12" style="border-right:1px solid #e9e5e5">
+                    <ul style="list-style-type:none; font-size:15px;">
+                        <li><b style="color:#00a1ff">Our Services</b></li>
+                        
+                        <br />
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Hospitals</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Ambulance</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Regions</a></li>
+                       <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Guide</a></li>
+                    </ul>
+                </div>
+                 <div class="col-sm-4 col-md-3 col-xs-12" style="border-right:1px solid #e9e5e5">
+                    <ul style="list-style-type:none; font-size:15px;">
+                        <li><b style="color:#00a1ff">All About Us</b></li>
+                        <br />
+                        
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Contacts</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">About Us</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Offices</a></li>
+                       <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Management</a></li>
+                    </ul>
+                </div>
+                 <div class="col-sm-4 col-md-3 col-xs-12" style="border-right:1px solid #e9e5e5">
+                    <ul style="list-style-type:none; font-size:15px;">
+                         <li><b style="color:#00a1ff">Other Links</b></li>
+                        <br />
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Carreers</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">SiteMap</a></li>
+                        <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Regions</a></li>
+                       <li style="text-align:left; padding-left:120px"><a href="#" style="text-decoration:none; color:#e9e5e5">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-12" style="border-right:1px solid #e9e5e5">
+                    <h5><b style="color:#00a1ff;">Connect With Us</b></h5>
+                    <div>
+                        <br />
+                        <a href="[full link to your Twitter]">
+                            <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+                        </a>
+                        <a href="[full link to your Pinterest]">
+                            <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest.png" width="35" height="35" />
+                        </a>
+                        <a href="[full link to your Facebook page]">
+                            <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+                        </a>
+                        <a href="[full link to your LinkedIn]">
+                            <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35" height="35" />
+                        </a>
+                        <a href="[full link to your Instagram]">
+                            <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <hr />
+                    
+                    <h5 id="prod">All Rights Reserved &reg; 2015</h5>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
     </form>
  
         

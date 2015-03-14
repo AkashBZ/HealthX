@@ -16,7 +16,7 @@
     <link rel="shotrcut icon" type="image/x-icon" href="images/im1.jpg" />
     
 </head>
-<body>
+<body style="background:url(images/back.jpg) no-repeat">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
    
     <script src="js/bootstrap.min.js"></script>
@@ -74,9 +74,7 @@
         <div class="push"></div>
 
        </div></div>
-   <%-- <div id="footer" class="col-lg-12 footer">
-        <label style="width:100%; background-color:gray"><h5 style="text-align:center">All Copyrights Reserved.</h5></label>
-    </div>--%>
+  
        
  
 </body>
