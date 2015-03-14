@@ -53,7 +53,7 @@
         <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Patient ID: HHX-a1388/qB</h5></label>
          <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Patient Name: Nikhil Maurya</h5></label>
          <label style=" background-color:#66AF66" class="col-lg-4"><h5 style="color:white">Attending Doctor: Dr. Anil Mitra</h5></label>
-        <div id="chartarea" style="width:80%; height:80%; float:left; border-right: 1px solid #E6E6E6; margin:3% 0% 0% 7%"></div>
+        <div id="chartarea" style="width:80%; height:80%; float:left; border-right: 1px solid #E6E6E6; margin:3% 0% 5% 7%"></div>
          <div id="selection" class="container-fluid">
              <div class="row">
                  <div class="col-sm-4" style="border-right:1px solid #D1D1FF">
